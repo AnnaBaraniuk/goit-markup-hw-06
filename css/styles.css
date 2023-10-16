@@ -101,67 +101,13 @@ a {
 
 .header-menu {
   display: none;
-  /* align-items: center;
-  gap: 40px; */
 }
 
-/* .header-menu-item:first-child .header-menu-link {
-  color: #404bbf;
-  position: relative;
-}
-
-.header-menu-item:first-child .header-menu-link::after {
-  content: "";
-  position: absolute;
-  height: 4px;
-  width: 48px;
-  border-radius: 2px;
-  background-color: #404bbf;
-  left: 0;
-  bottom: -1px;
-}
-
-.header-menu-link {
-  color: #2e2f42;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-menu-link:hover,
-.header-menu-link:focus {
-  color: #404bbf;
-}
- */
 .header-container {
   display: flex;
   margin-left: 0;
   margin-right: 0;
 }
-
-/* .contacts {
-  font-style: normal;
-  margin-left: auto;
-}
-
-.contacts .link {
-  color: #434455;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts .link:hover,
-.contacts .link:focus {
-  color: #404bbf;
-} */
 
 .contacts-links {
   justify-content: flex-end;
@@ -270,6 +216,8 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 48px;
 }
 
+/* Section HERO */
+
 .hero {
   background-color: #2e2f42;
   background-image: linear-gradient(
@@ -339,7 +287,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #404bbf;
 }
 
-/* FEATURES */
+/* Section 1 FEATURES */
 
 .features {
   background-color: #fff;
@@ -376,7 +324,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.02em;
 }
 
-/* Section_2_employees */
+/* Section 2 Employees */
 
 .employees {
   padding: 96px 0;
@@ -467,7 +415,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Section_3_OUR PORTFOLIO */
+/* Section 3 OUR PORTFOLIO */
 
 .benefits {
   padding-top: 96px;
@@ -634,9 +582,6 @@ margin-bottom: 72px;;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-form-subscribe {
- 
-}
 
 .footer-form {
   display: block;
@@ -693,6 +638,8 @@ margin-bottom: 72px;;
   margin-left: 16px;
 }
 
+/* BACKDROP */
+
 .backdrop .is-open {
   opacity: 1;
   visibility: visible;
@@ -718,6 +665,8 @@ margin-bottom: 72px;;
   visibility: visible;
   pointer-events: auto;
 }
+
+/* MODAL */
 
 .modal {
   position: absolute;
@@ -920,17 +869,14 @@ margin-bottom: 72px;;
     max-width: 768px;
   }
 
+/* HEADER */
+
 .header {
 display: block;
+height: 72px;
   }
 
 .header-container {
-  display: flex;
-  align-items: center;
-}
-
- .header-nav {
-  display: flex;
   align-items: center;
 }
 
@@ -938,10 +884,8 @@ display: block;
   display: none;
 }
 
-
 .header-logo {
 margin-right: 120px;
-display: flex;
 }
 
 .header-menu {
@@ -949,6 +893,7 @@ display: flex;
   align-items: center;
     gap: 40px;
 }
+
 .header-menu-item:first-child .header-menu-link {
   color: #404bbf;
   position: relative;
@@ -1009,13 +954,9 @@ justify-content: flex-end;
   color: #404bbf;
 }
 
-
+/* Section HERO */
 
 .hero {
-  background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/peopleoffice_tab.jpg);
       max-width: 768px;
       padding-top: 112px;
       padding-bottom: 112px;
@@ -1039,6 +980,8 @@ justify-content: flex-end;
   max-width: 496px;
 }
 
+/* Section 1 FEATURES */
+
 .features-list {
   gap: 24px;
   }
@@ -1047,6 +990,8 @@ justify-content: flex-end;
    width: calc((100% - 24px) / 2);
  }
 
+/* Section 2 Employees */
+
  .employees-list {
   row-gap: 64px;
  }
@@ -1054,6 +999,9 @@ justify-content: flex-end;
 .employees-item {
   flex-basis: calc((100% - 24px) / 2);
 }
+
+/* Section 3 OUR PORTFOLIO */
+
 .benefits-list {
 row-gap: 72px;
 }
@@ -1061,12 +1009,7 @@ row-gap: 72px;
   width: calc((100% - 24px) / 2);
 }
 
-.modal {
-  width: 408px;
-    min-height: 584px;
-    padding-right: 25px;
-      padding-left: 23px;
-}
+/* FOOTER */
 
 .footer {
   padding-top: 97px;
@@ -1075,8 +1018,10 @@ row-gap: 72px;
   padding-right: 108px;
 }
 
-.footer-part {
-  display: flex;
+.container-footer { 
+  width: max-content;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -1086,8 +1031,6 @@ justify-content: flex-start;
 .footer-info { 
       margin-left: 108px;
         margin-right: 24px;
-        margin-bottom: 72px;
-      
 }
 
 .footer-form-subscribe {
@@ -1105,54 +1048,18 @@ justify-content: flex-start;
 }
 
 .footer-form-input {
-  color: #ffffff;
   width: 264px;
-  height: 40px;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 8px 0 8px 16px;
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  padding-left: 16px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-}
-
-.footer-form-input::placeholder {
-  color: #ffffff;
 }
 
 .footer-form-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 24px;
-  gap: 16px;
-  min-width: 165px;
-  height: 40px;
   margin-left: 24px;
-  margin-right: ;
 }
 
-.button {
-  background-color: #4d5ae5;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  gap: 16px;
-}
-
-.footer-icon {
-  fill: #ffffff;
-  margin-left: 16px;
+.modal {
+  width: 408px;
+  min-height: 584px;
+  padding-right: 25px;
+  padding-left: 23px;
 }
 }
 
@@ -1168,6 +1075,14 @@ justify-content: flex-start;
 .menu-open {
   display: none;
 }
+
+/* HEADER */
+
+.header {
+    height: 72px;
+}
+
+
 .header-logo {
   margin-right: 76px;
 }
@@ -1213,8 +1128,9 @@ justify-content: flex-start;
 }
 
 .header-container {
-  display: flex;
   align-items: center;
+  margin-left: auto;
+    margin-right: auto;
 }
 
 .contacts {
@@ -1236,22 +1152,20 @@ justify-content: flex-start;
 }
 
 .contacts-links {
-  display: flex; 
   justify-content: flex-end;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
   gap: 40px;
+  align-items: center;
 }
 
+ /* Section HERO */
+
   .hero {
-  background-image: linear-gradient(to bottom,
-     rgba(46, 47, 66, 0.7),
-              rgba(46, 47, 66, 0.7)),
-            url(../images/peopleoffice.jpg);
             max-width: 1440px;
             padding-top: 188px;
               padding-bottom: 188px;
         }
-
                 @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
@@ -1260,7 +1174,6 @@ justify-content: flex-start;
                         rgba(46, 47, 66, 0.7),
                         rgba(46, 47, 66, 0.7)),
                       url(../images/peopleoffice_2x.jpg);
-        
                   }
                 }
         
@@ -1269,7 +1182,11 @@ justify-content: flex-start;
       font-size: 56px;
        line-height: 1.07;
       margin-bottom: 48px;
+      max-width: 496px;
         }
+
+/* Section 1 FEATURES */
+
   .svg-icons {
     display: block;
     display: flex;
@@ -1287,11 +1204,15 @@ justify-content: flex-start;
       width: calc((100% - 72px) / 4);
     }
 
+   /* Section 2 Employees */
+
 .employees-list {
   flex-wrap: nowrap;
   gap: 24px;
   max-width: 100%;
 }
+
+ /* Section 3 OUR PORTFOLIO */
 
 .benefits {
   padding-top: 120px;
@@ -1302,18 +1223,19 @@ justify-content: flex-start;
  width: calc((100% - 24px * 2) / 3);
 }
 
+/* FOOTER */
+
 .footer {
   padding: 100px 0;
 }
 
 .container-footer {
-  display: flex;
-  flex-direction: row;
+  flex-wrap: nowrap;
   }
 
 .footer-info {
   margin-left: 0;
-  margin-right: 120px;
+  margin-right: 96px;
   padding: 0;
 }
 
